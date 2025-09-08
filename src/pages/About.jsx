@@ -9,8 +9,8 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
+import { Button } from "../components/ui/button";
+import { toast } from "../components/ui/use-toast";
 
 const About = () => {
   const handleDownloadCV = (type) => {

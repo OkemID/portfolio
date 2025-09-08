@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Calendar, Clock, Tag, ArrowRight, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
+import { Button } from "../components/ui/button";
+import { toast } from "../components/ui/use-toast";
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState("");
