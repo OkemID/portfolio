@@ -9,21 +9,21 @@ import {
   Twitter,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
+import { Button } from "../components/ui/button";
+import { toast } from "../components/ui/use-toast";
+import profile from "../../assets/profile.jpeg";
+
 const Home = () => {
   const handleDownloadCV = () => {
     toast({
       title: "🚧 CV Download",
-      description:
-        "This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
+      description: "Please make a request for the latest CV 🚀",
     });
   };
   const handleHireMe = () => {
     toast({
       title: "🚧 Hire Me",
-      description:
-        "This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
+      description: "Please use the contact page 🚀",
     });
   };
   return (
@@ -205,8 +205,8 @@ const Home = () => {
               >
                 <img
                   className="w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-white/20"
-                  alt="Professional headshot of a creative developer and designer"
-                  src="https://images.unsplash.com/photo-1603991414220-51b87b89a371"
+                  alt="Mordi Chukwubuokem"
+                  src={profile}
                 />
               </motion.div>
             </div>

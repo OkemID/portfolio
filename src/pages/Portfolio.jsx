@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github, Filter } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
+import { Button } from "../components/ui/button";
+import { toast } from "../components/ui/use-toast";
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("all");

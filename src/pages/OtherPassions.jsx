@@ -10,8 +10,8 @@ import {
   Award,
   Target,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
+import { Button } from "../components/ui/button";
+import { toast } from "../components/ui/use-toast";
 
 const OtherPassions = () => {
   const [activeTab, setActiveTab] = useState("forex");

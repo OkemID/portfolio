@@ -10,8 +10,8 @@ import {
   Twitter,
   MessageSquare,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
+import { Button } from "../components/ui/button";
+import { toast } from "../components/ui/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

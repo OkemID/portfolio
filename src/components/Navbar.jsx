@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 
 const Navbar = ({ isDarkMode, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
