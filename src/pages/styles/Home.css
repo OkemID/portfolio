@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Helvetica, Verdana, sans-serif;
+}
+
+.introContainer {
+  padding: 16px;
+}
+
+.greeting {
+  font-size: x-large;
+  font-weight: 600;
+  color: #3c7dd3;
+  margin: 16px 0;
+}
+
+.name {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 60px;
+  background: linear-gradient(to right, #d3d8e6, #48d2f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 6s ease infinite;
+  margin: 16px 0;
+}
+
+.heading {
+  font-size: 28px;
+  line-height: 32px;
+  color: #d1d5db;
+  font-weight: 400;
+  margin: 16px 0;
+}
+
+.description {
+  color: #9CA3AF;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 16px 0;
+}
+
+.portfolioIcon {
+  color: #FFF; 
+}
+
+.CTA {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.mouse {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}

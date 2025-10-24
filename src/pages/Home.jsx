@@ -10,8 +10,10 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../components/ui/button";
+import { ButtonOne } from "../components/Button";
 import { toast } from "../components/ui/use-toast";
 import profile from "../../assets/profile.jpeg";
+import "./styles/Home.css";
 
 const Home = () => {
   const handleDownloadCV = () => {
@@ -48,8 +50,9 @@ const Home = () => {
             transition={{
               duration: 0.8,
             }}
-            className="space-y-8"
+            className="introContainer"
           >
+            {/* ========Heading======== */}
             <motion.div
               initial={{
                 opacity: 0,
@@ -62,17 +65,16 @@ const Home = () => {
               transition={{
                 delay: 0.2,
               }}
-              className="space-y-4"
+              className=""
             >
-              <h2 className="text-xl text-blue-400 font-medium">Hi, I'm</h2>
-              <h1 className="text-5xl lg:text-7xl font-bold gradient-text">
-                Chukwubuokem O Mordi
-              </h1>
-              <h3 className="text-2xl lg:text-3xl font-semibold text-gray-300">
+              <h2 className="greeting">Hi, I'm</h2>
+              <h1 className="name">Chukwubuokem O Mordi</h1>
+              <h3 className="heading">
                 Software Developer, UI/UX Designer & Marine Engineer
               </h3>
             </motion.div>
 
+            {/*===========Description=========== */}
             <motion.p
               initial={{
                 opacity: 0,
@@ -85,7 +87,7 @@ const Home = () => {
               transition={{
                 delay: 0.4,
               }}
-              className="text-lg text-gray-400 max-w-lg leading-relaxed"
+              className="description"
             >
               A dynamic professional bridging the worlds of advanced engineering
               and creative technology. My journey from marine engineering to
@@ -105,33 +107,36 @@ const Home = () => {
               transition={{
                 delay: 0.6,
               }}
-              className="flex flex-wrap gap-4"
+              className="CTA"
             >
               <Link to="/portfolio">
-                <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                <ButtonOne className="portfolioButton">
                   View My Portfolio
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                  <ArrowRight className="portfolioIcon" />
+                </ButtonOne>
               </Link>
 
-              <Button
+              {/* ========Download CV======== */}
+              <ButtonOne
                 variant="outline"
                 onClick={handleDownloadCV}
-                className="px-8 py-3 rounded-full font-semibold border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300"
+                className=""
               >
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
-              </Button>
+              </ButtonOne>
 
-              <Button
+              {/* ========Hire Me======== */}
+              <ButtonOne
                 onClick={handleHireMe}
                 className="bg-gradient-to-r from-green-500 to-teal-600 hover:from-green-600 hover:to-teal-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Hire Me
-              </Button>
+              </ButtonOne>
             </motion.div>
 
+            {/* =========Call to action========= */}
             <motion.div
               initial={{
                 opacity: 0,
@@ -144,7 +149,7 @@ const Home = () => {
               transition={{
                 delay: 0.8,
               }}
-              className="flex space-x-6"
+              className="CTA"
             >
               <a
                 href="#"
@@ -166,7 +171,6 @@ const Home = () => {
               </a>
             </motion.div>
           </motion.div>
-
           <motion.div
             initial={{
               opacity: 0,
@@ -223,7 +227,7 @@ const Home = () => {
           transition={{
             delay: 1.2,
           }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="mouse"
         >
           <motion.div
             animate={{
