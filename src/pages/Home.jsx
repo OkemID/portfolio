@@ -9,7 +9,7 @@ import {
   Twitter,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "../components/ui/button";
+import { Button } from "../components/button";
 import { ButtonOne } from "../components/Button";
 import { toast } from "../components/ui/use-toast";
 import profile from "../../assets/profile.jpeg";

@@ -35,14 +35,14 @@
 }
 
 .description {
-  color: #9CA3AF;
+  color: #9ca3af;
   font-size: 18px;
   line-height: 28px;
   margin: 16px 0;
 }
 
 .portfolioIcon {
-  color: #FFF; 
+  color: #fff;
 }
 
 .CTA {
@@ -56,4 +56,10 @@
   display: flex;
   justify-content: center;
   align-self: flex-end;
+}
+
+@media (max-width: 480px) {
+  :root {
+    padding: 0.75rem 0.5rem;
+  }
 }
